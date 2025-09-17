@@ -30,7 +30,7 @@ golosinasPedidas = []
 
 comando = ""
 
-# ------------------------------------------- Funciones
+# ------------------------------------------------------ Funciones
 
 def pedirGolosinas():
     legajo = int(input("[Ingrese su legajo]:"))
@@ -50,7 +50,6 @@ def pedirGolosinas():
                     golosina[2] -= 1
 
                     agregarPedido(codigo)
-                        
 
                 elif(codigo in golosina and golosina[2] < 1):
                     print("[!] Ya no nos queda de esa golosina")
@@ -59,7 +58,6 @@ def pedirGolosinas():
 
     else:
         print("[!] Usted no es empleado de la empresa")
-
 
 def agregarPedido(codigo):
     for pedido in golosinasPedidas:
@@ -72,7 +70,6 @@ def agregarPedido(codigo):
             golosinasPedidas.append([gol[0], gol[1], 1])
             return
 
-
 def mostrarGolosinas():
     print("") 
     print("Golosinas Disponibles:") 
@@ -82,7 +79,6 @@ def mostrarGolosinas():
     print("")
     print(golosinasPedidas)
 
-
 def rellenarGolosinas():
 
     for i in range(0,3):
@@ -90,7 +86,6 @@ def rellenarGolosinas():
         if (contra != clavesTecnico[i]):
             print("[!] Contraseña incorrecta!")
             return
-    
 
     print("")
     print("Autenticado completado")
@@ -112,7 +107,7 @@ def rellenarGolosinas():
     print("Esa golosina no existe")
 
 
-# ------------------------------------------- Main
+# --------------------------------------------------------------- Main
 
 while True:
     print("")
