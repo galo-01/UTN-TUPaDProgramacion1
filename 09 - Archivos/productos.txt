@@ -1,0 +1,4 @@
+coca loca,120.5,30
+pepsi,350.0,15
+papas 3D,80.0,50
+caca,34.0,23
